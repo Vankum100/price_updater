@@ -1,0 +1,11 @@
+.idea
+.env
+.vscode
+.vs
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+tg-bot/src/__pycache__
+tg-bot/__pycache__
