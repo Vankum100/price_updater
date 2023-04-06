@@ -22,7 +22,7 @@ async def main():
 
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
     SPREADSHEET_ID = '13gQBU3Q_npIco5O7iK4Ei6q1EiogqEscOl6iKG5hu9E'
-    SERVICE_ACCOUNT_FILE = 'D:\\TgRobot\\price_updater\\tasks\\credintials.json'
+    SERVICE_ACCOUNT_FILE = 'credintials.json'
     credentials = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
     gs = GoogleSheet(SERVICE_ACCOUNT_FILE, SPREADSHEET_ID)
