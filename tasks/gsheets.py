@@ -67,7 +67,10 @@ class GoogleSheet:
 
 
 
-    def _update_table(self, sheet_file_name, telegram_data):
+    def _update_table(self,  telegram_data):
+        #//take a list of worksheets names[Sony YM,Yandex YM...] as a list
+        # ,iterate it ,to apply the logic for all sheets
+
         self.sheet = self.client.open_by_key(self.sheet_file_ID).worksheet('Sony YM')
         # updating logic to be here
         prices_column_index = self.sheet.find('Цена опт., р').col
@@ -76,11 +79,12 @@ class GoogleSheet:
         for item in telegram_data:
             for name in item :
                 cell = self.sheet.find(name)
-                if name == cell:
-                    print(self.sheet.cell(cell.row, prices_column_index.col))
-                    self.sheet.update_cell(cell.row, prices_column_index, item[name])
-                    self.sheet.updaate_cell(cell.row,selling_column_index,(item[name]*1.1))
-                    print(self.sheet.cell(cell.row, prices_column_index.col))
+                if cell is not None and name == cell.value:
+                    if name == cell.value:
+                        print(self.sheet.cell(cell.row, prices_column_index).value)
+                        self.sheet.update_cell(cell.row, prices_column_index, item[name])
+                        self.sheet.update_cell(cell.row,selling_column_index,float(item[name])*1.1)
+                        print(self.sheet.cell(cell.row, prices_column_index).value)
 
 
 

@@ -28,21 +28,8 @@ async def main():
     gs = GoogleSheet(SERVICE_ACCOUNT_FILE, SPREADSHEET_ID)
     gs.connect()
     #gs.print_all_data()
-    gs._update_table(SPREADSHEET_ID, messages)
+    gs._update_table( messages)
 
-#seperating  message data to two lists
-    product_name = []
-    product_price = []
-    for i in messages:
-        for k in i:
-            product_name.append(k)
-            product_price.append(i[k])
-
-    print(product_name)
-    print ('#'*50)
-    print(product_price)
-#################################################
-# To be in Config file
 
 
 
