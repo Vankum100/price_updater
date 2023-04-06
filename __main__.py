@@ -28,7 +28,7 @@ async def main():
     gs = GoogleSheet(SERVICE_ACCOUNT_FILE, SPREADSHEET_ID)
     gs.connect()
     #gs.print_all_data()
-    gs._update_table( messages)
+    gs.table_updt( messages)
 
 
 

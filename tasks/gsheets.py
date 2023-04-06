@@ -30,40 +30,13 @@ class GoogleSheet:
 
 
 
-    def remove_special_c(self,text):
+    def remove_special_charachters(self,text):
         fixed =""
         for i in text:
             if i.isalnum() or i.isspace():
                 fixed +=i
 
         return fixed
-
-
-    def update_table(self,sheet_file_name,telegram_data):
-        self.sheet = self.client.open_by_key(self.sheet_file_ID).worksheet('Sony YM')
-        #updating logic to be here
-
-        product_name = []
-        product_price = []
-        for i in telegram_data:
-            for k in i:
-                product_name.append(k)
-                product_price.append(i[k])
-
-        prices_column_index = self.sheet.find('Цена опт., р').col
-
-        _names_column_values = self.sheet.col_values(2)
-
-     #   try:
-
-        for i in range (len(product_name)):
-              if _names_column_values[i-1] == product_name[i-1]:
-                  print(self.sheet.cell(i,product_price[i]))
-                  self.sheet.update_cell(i,prices_column_index,product_price[i])
-                  print(self.sheet.cell(i,product_price[i]))
-       # except Exception as e :
-       #     print(f'\n{e}\n')
-
 
 
 
@@ -88,6 +61,27 @@ class GoogleSheet:
 
 
 
+    #this code is the same as above but optimized
+    #to reduce the api call requests,we extract the data all at once using get_bath()
+    def table_updt(self,telegram_data):
+        self.sheet = self.client.open_by_key(self.sheet_file_ID).worksheet('Sony YM')
+        prices_column_index = self.sheet.find('Цена опт., р').col
+        selling_column_index = 7
+        _names_column_values = self.sheet.col_values(2)
+        data_range = self.sheet.range(1, 1, self.sheet.row_count, len(_names_column_values))
+        data = {}
+        for cell in data_range:
+            data[(cell.row, cell.col)] = cell.value
+        for item in telegram_data:
+            for name in item:
+                for row, col in data:
+                    if data[(row, 2)] == name:
+                        if data[(row, 2)] == name:
+                            print(data[(row, prices_column_index)])
+                            self.sheet.update_cell(row, prices_column_index, item[name])
+                            self.sheet.update_cell(row, selling_column_index, float(item[name]) * 1.1)
+                            print(data[(row, prices_column_index)])
+                            break
 
 
 
