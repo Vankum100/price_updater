@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "price-upadater",
+  "private_key_id": "65b486702db21a9c42dc5fc08553f1be13ba22e0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5t54KvrwJ9lL/\n/bwb7vBlmTTAci8c8KyxeD0hpWYJA3QpGD907jZXDFq8njz4LzFs7ls3l/7JL8eM\nwv1I3Q2ip2dtECythu1N5lSVnBb87Qxfc06268NY6frOzyjoxi9w5G+gTHB+Tbq1\nI0NTBx2QFfPgC87jMczIB9Hcy6SZrM5F8xfIwpc4LnV3pWUSChtFbQVTtm/4bDF6\nkih6MucZkfck40A74sZy3hKkzYV1RNJkeKeyPHV3G2rdWcprKpV0ED6u5+QDnOW8\nKy3FBVTm1zv8O4SnbrER6sTCNvVbUKAF9tknKJsGw5hc+DHIBAoyFeiiVooJKi3n\nNzCGtalnAgMBAAECgf8VnkotwtLtiSVTdAKk116+Dn3iT2hfwteKndrmQvQ3S5YG\nzDIwalccMVP4OnNE1wZQQW7DPSFrfSRXCyhwuUqp15+Y30kg6fpPSk1bHQOQBzs2\nR5xIe4+oMGE05Oh3yc1Vig6nmj5K2/SsutSB1bibQFlWVNZaAnIHPUgwnrcj+PnM\nKg3Pn/pmekunWDMUNxCUxcpCg5tU4r6+bbJq5BJGanRLqNIUhJdYXuYFJMlyZJiZ\nZnTsBqVZKp3BJnq/fvE5pGF4V+2Wi7K+POwI0KI9MIknfSkZ5tij+ygyTKWj/SnE\nmIMzbnDRGRFi64NXMd4RRXFeM9P319eLPnYLTakCgYEA8hTfvJS7WbiLgnp4ouOU\n4EaL+ACr0wL2jLxa8an2g8pacUIG+toeW0+TTcJW8o5pzvPTeqVfiEKlK93Z+kXM\ndalqhnJUIj8zYl5tO1/ojMYvv6PP4AuwUL28A3O8iG62fglbKnuc737DJhRQmON/\nGq1Ef9+4ywWg/1mrm51U7GUCgYEAxGUiYJHY8a9DoRvBxyJOMm/0Mtgo96B6I6E8\nBJekbekZNC17Duu+prrQaC9qfKW9b7+14Gc2i348IngOIA2GlU1byiwMCoQ1OnEw\ngGB/2NhK7IFxh3xIRw2BPuwPhzYsJBNL9SRLvgQ72l1gTMZigQY0HNNohNmwnJ+0\nxfrdQ9sCgYA6Ih0gci8Teqe166cwpqpHuWk/YxngEGQYo9rLEd+rAlr5u7tlXh/Q\nGansEHFEykJKem8ckr4AQNDdWedQnJZe4xI7uxTNLJQwWTCuA3ga5jTtNm9jBCuR\nGB8gTRjHQp78YU7NQuYK9UvzxwkbzfXl+BntA1KjHnTtHSGCuyN7qQKBgQCprrOP\n+hMVZZcp6GB5G7OyMjYrg8WJhXZhuFmxog8oA0CKa00qLBax2TBdA7KedViB54JN\nmv9ucCempFGX8fe4oXjP6VSR9X5Duy3rjPSItv+s7X3YUFHmSc3EPpKAARcMKDv1\nVmG2j9Piq9CbJMBQt7pouWNRfP/xoq6+ayunBwKBgQCzOqgqO8JqMH2fVfDn4U0n\naBo6OlHRUuBtJ+iGtUZOU/YdMtLSs4gKXv4eRtX4mi38J5wkOVqO3hlIquseTXSv\nXkIltwQZty80gH/yQxn1xKRrxx1/KrSfxlVe/XYI8HxsBZv9/Usyf9ohBmT0LijI\nBov6DBgHhcdDM5LyhAQ5OQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "price-updater@price-upadater.iam.gserviceaccount.com",
+  "client_id": "118339199560342464688",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/price-updater%40price-upadater.iam.gserviceaccount.com"
+}
