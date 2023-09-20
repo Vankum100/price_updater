@@ -1,5 +1,6 @@
 
 # this file is not useful for now
+
 apple_products = {
     "iPhone": 10000,
     "iPad": 9000,
@@ -10,6 +11,7 @@ apple_products = {
     "Mouse": 5000,
     "TV": 5000
 }
+
 
 samsung_products = {
     "product1": 7000,
